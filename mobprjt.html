@@ -1,67 +1,143 @@
 <!DOCTYPE html>
-<html lang="pt-brs">
+<!-- Define que este é um documento HTML5 -->
+
+<html lang="pt-br">
+<!-- Define que o idioma do site é português do Brasil -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tete</title>
-    <link rel="stylesheet" href="mob.css">
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres para suportar acentos -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Faz o site funcionar bem em celulares e tablets -->
+
+  <title>Teste de Séries</title>
+  <!-- Título que aparece na aba do navegador -->
+
+  <link rel="stylesheet" href="mob.css">
+  <!-- Se você quiser, pode colocar estilos em um arquivo separado chamado mob.css -->
+
+  <style>
+    /* Estilos básicos da página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+      line-height: 1.6; /* espaçamento entre linhas */
+    }
+
+    /* Estilo para títulos */
+    h1, h2 {
+      padding: 10px;
+      border-radius: 5px;
+      color: white;
+    }
+
+    /* Classe para título principal em rosa */
+    .titulo-principal {
+      background-color: pink;
+      color: black;
+    }
+
+    /* Subtítulo com fundo amarelo */
+    .subtitulo {
+      background-color: yellow;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* Estilo para o título da série Supernatural */
+    .supernatural {
+      background-color: maroon;
+    }
+
+    /* Estilo para o título da série Grey's Anatomy */
+    .greys {
+      background-color: blue;
+    }
+
+    /* Estilo para as imagens */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    /* Estilo para a seção de curiosidades */
+    .curiosidades {
+      background-color: rgb(7, 253, 40);
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /* Estilos para links */
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <script>
+    // Alerta que aparece assim que a página abre
+    alert("Pode não estar perfeito, mas eu me esforcei! :)");
+  </script>
 </head>
+
 <body>
-    <h1 style="background-color: pink;">A vida presta</h1>
+  <!-- Aqui começa o conteúdo visível da página -->
 
-    <p h2 style="background-color: yellow;">isso e um site teste</p h2>
+  <h1 class="titulo-principal">A vida presta</h1>
+  <!-- Título principal com fundo rosa -->
 
-    <div>  
+  <p class="subtitulo">Isso é um site de teste</p>
+  <!-- Um subtítulo explicando o objetivo do site -->
 
-        <h1 style="background-color: rgb(253, 0, 0);" p> serie favorita </h1 p> 
+  <div>
+    <!-- Divisão de conteúdo -->
 
-         <br> 
+    <h2 style="background-color: red; color: white; padding: 10px; border-radius: 5px;">Série favorita</h2>
+    <!-- Um título para a seção da série favorita -->
 
-            <h1 style="background-color: maroon;" p>Supernatural</h1 p>
+    <h3 class="supernatural">Supernatural</h3>
+    <!-- Título da série com fundo marrom escuro -->
 
-                <br>
+    <!-- Imagem da série Supernatural -->
+    <img src="https://th.bing.com/th/id/R.e30f41fada83d5469360402b3b7998fd?rik=62I5cThI7jhOoQ&pid=ImgRaw&r=0" alt="Imagem de Supernatural">
 
-                
-             <img src="https://th.bing.com/th/id/R.e30f41fada83d5469360402b3b7998fd?rik=62I5cThI7jhOoQ&pid=ImgRaw&r=0" width="807" height="507" <br>
+    <!-- Parágrafo com descrição da série -->
+    <p>
+      A série segue os irmãos Sam Winchester e Dean Winchester que viajam por toda a América em um Chevrolet Impala 1967 preto investigando e combatendo eventos paranormais e outras ocorrências inexplicáveis, muitas delas baseadas em lendas urbanas americanas e folclore, assim como diferentes criaturas sobrenaturais.
+      <a href="https://pt.wikipedia.org/wiki/Supernatural_(s%C3%A9rie_de_televis%C3%A3o)" target="_blank">Saiba mais...</a>
+    </p>
+  </div>
 
-                           <br>
+  <!-- Título da seção de curiosidades -->
+  <h2 class="curiosidades">Curiosidades</h2>
 
-                          A série segue os irmãos Sam Winchester e Dean Winchester <br>
-                             que viajam por toda a América em um Chevrolet Impala 1967 preto investigando <br>
-                                 e combatendo eventos paranormais e outras ocorrências inexplicáveis, <br>
-                                    muitas delas baseadas em lendas urbanas americanas e folclore, <br>
-                                         assim como diferentes criaturas sobrenaturais. <a href="https://pt.wikipedia.org/wiki/Supernatural_(s%C3%A9rie_de_televis%C3%A3o)">saiba mais...</a>
+  <!-- Texto da curiosidade -->
+  <p>
+    Além de assistir Supernatural, ela também assiste de vez em quando outra série com a sua mãe, chamada Grey's Anatomy.
+  </p>
 
-        </p>
-        
-    </div>
+  <h3 class="greys">Grey's Anatomy</h3>
+  <!-- Título da série Grey's Anatomy -->
 
-    <br>
-    <h2 style="background-color: rgb(7, 253, 40);">curiosidades</h2>
-    <div>
-        <p>
-        Álem de assistir Supernatural ela tambem assiste de vez em quando uma outra série com a sua mae <br>
-         chamada Grey's Anatomy
-        </p>
-    </div>
+  <!-- Imagem da série Grey's Anatomy -->
+  <img src="https://th.bing.com/th/id/R.1314e66d851803b4c9242ed4be581f29?rik=BiAWtVVbyfkbeQ&riu=http%3a%2f%2fimages1.fanpop.com%2fimages%2fphotos%2f1300000%2fGrey-s-Anatomy-greys-anatomy-1347108-1024-768.jpg&ehk=bhiY4XhhBOdMAczw5impnbLuDSLmbPpWQhmiJsm2ekg%3d&risl=&pid=ImgRaw&r=0" alt="Imagem de Grey's Anatomy">
 
-    <br>
-
-    <h1 style="background-color: blue;">Grey's Anatomy</h1>
-
-    <div>
-        <img src="https://th.bing.com/th/id/R.1314e66d851803b4c9242ed4be581f29?rik=BiAWtVVbyfkbeQ&riu=http%3a%2f%2fimages1.fanpop.com%2fimages%2fphotos%2f1300000%2fGrey-s-Anatomy-greys-anatomy-1347108-1024-768.jpg&ehk=bhiY4XhhBOdMAczw5impnbLuDSLmbPpWQhmiJsm2ekg%3d&risl=&pid=ImgRaw&r=0" width="807" height="605">
-        <p> A série médica de enorme sucesso foca em um grupo de jovens médicos do Hospital <br>
-             Grace Mercy West, de Seattle, que começaram a carreira na própria instituição <br>
-               como residentes. Um dos jovens médicos que dá nome ao show, Meredith Grey, <br> 
-                é filha de um famoso cirurgião. Meredith luta para manter as relações com seus colegas, <br>
-                 especialmente o chefe do centro cirúrgico, Richard Webber, devido ao relacionamento que já existia entre os dois -- <br>
-                  Webber teve um caso com a mãe de Meredith na época em que ela era jovem. <a href="https://pt.wikipedia.org/wiki/Grey%27s_Anatomy">saiba mais...</a>
-
-
-        </p>
-    </div>
-             
+  <!-- Descrição da série Grey's Anatomy -->
+  <p>
+    A série médica de enorme sucesso foca em um grupo de jovens médicos do Hospital Grace Mercy West, de Seattle, que começaram a carreira na própria instituição como residentes. Um dos jovens médicos que dá nome ao show, Meredith Grey, é filha de um famoso cirurgião. Meredith luta para manter as relações com seus colegas, especialmente o chefe do centro cirúrgico, Richard Webber, devido ao relacionamento que já existia entre os dois — Webber teve um caso com a mãe de Meredith quando ela era jovem.
+    <a href="https://pt.wikipedia.org/wiki/Grey%27s_Anatomy" target="_blank">Saiba mais...</a>
+  </p>
 
 </body>
 </html>
